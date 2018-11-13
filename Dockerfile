@@ -1,12 +1,16 @@
-FROM alpine:3.7
+FROM alpine:3.8
+
+ENV TERRAFORM_VERSION="0.11.10"
 
 RUN \
   mkdir -p /aws && mkdir -p ~/.ssh && \
   echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
   apk update && apk -Uuv add groff less python py-pip bash jq openssl tzdata \
-    git terraform openssh-client && \
+    git wget unzip openssh-client && \
+  wget -q -O /terraform.zip "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip" && \
+  unzip /terraform.zip -d /bin && \
   pip install awscli && \
-  apk --purge -v del py-pip && \
-  rm /var/cache/apk/*
+  apk --purge -v del py-pip wget unzip && \
+  rm /var/cache/apk/* /terraform.zip
 
 WORKDIR /aws

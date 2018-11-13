@@ -5,18 +5,18 @@
 - shopline-test
 
 ```
-docker build -t 990090895087.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:1.1.1 .
-docker tag 990090895087.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:1.1.1 990090895087.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:latest
-docker push 990090895087.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:1.1.1
+docker build -t 990090895087.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:1.1.2 . --no-cache
+docker tag 990090895087.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:1.1.2 990090895087.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:latest
+docker push 990090895087.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:1.1.2
 docker push 990090895087.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:latest
 ```
 
 - shopline
 
 ```
-docker tag 990090895087.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:1.1.1 332947256684.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:1.1.1
-docker tag 332947256684.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:1.1.1 332947256684.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:latest
-docker push 332947256684.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:1.1.1
+docker tag 990090895087.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:1.1.2 332947256684.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:1.1.2
+docker tag 332947256684.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:1.1.2 332947256684.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:latest
+docker push 332947256684.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:1.1.2
 docker push 332947256684.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-aws-cli:latest
 ```
 
@@ -31,6 +31,6 @@ docker push 332947256684.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-
 - openssl
 - tzdata
 - git
-- aws-cli 1.15.76
-- terraform 0.11.7-r0
+- aws-cli 1.16.53
+- terraform 0.11.10
 - openssh-client
