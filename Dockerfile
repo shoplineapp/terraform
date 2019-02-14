@@ -1,6 +1,6 @@
 FROM alpine:3.8
 
-ENV TERRAFORM_VERSION="0.11.10"
+ENV TERRAFORM_VERSION="0.11.11"
 
 RUN \
   mkdir -p /aws && mkdir -p ~/.ssh && \
