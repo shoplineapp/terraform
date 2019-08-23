@@ -32,6 +32,7 @@ docker push 332947256684.dkr.ecr.ap-southeast-1.amazonaws.com/shopline/pipeline-
 - tzdata
 - make
 - git
+- zip
 - aws-cli 1.16.53
 - terraform 0.11.11
 - openssh-client
