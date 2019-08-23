@@ -5,7 +5,7 @@ ENV TERRAFORM_VERSION="0.11.11"
 RUN \
   mkdir -p /aws && mkdir -p ~/.ssh && \
   echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
-  apk update && apk -Uuv add groff less python py-pip bash jq openssl tzdata \
+  apk update && apk -Uuv add groff less python py-pip bash jq openssl tzdata make \
     git wget unzip openssh-client && \
   wget -q -O /terraform.zip "https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip" && \
   unzip /terraform.zip -d /bin && \
