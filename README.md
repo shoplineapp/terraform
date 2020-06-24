@@ -1,4 +1,4 @@
-# Terraform package for CI 
+# Terraform package for CI
 
 ## Include package
 
@@ -14,5 +14,5 @@
 - git
 - zip
 - aws-cli 1.16.53
-- terraform 0.12.25
+- terraform 0.12.26
 - openssh-client
