@@ -14,5 +14,5 @@
 - git
 - zip
 - aws-cli 1.16.53
-- terraform 0.13.0-rc1
+- terraform 0.13.0
 - openssh-client
