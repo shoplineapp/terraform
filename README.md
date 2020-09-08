@@ -13,6 +13,7 @@
 - make
 - git
 - zip
+- curl
 - aws-cli 1.16.53
 - terraform 0.13.2
 - openssh-client
