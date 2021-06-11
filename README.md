@@ -15,5 +15,5 @@
 - zip
 - curl
 - aws-cli 1.16.53
-- terraform 1.0.0
+- terraform 0.12.29
 - openssh-client
